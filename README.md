@@ -6,6 +6,9 @@ Bienvenido al repositorio del **Marketplace System**. Este documento detalla el 
 Este es un overview de como empezar se puede mantener y editar segun consideren necesario. Hagan un push request para cualquier modificacion que consideren y se ponen aqui esto es solo inicialmente. Y este repositorio es solo para estas indicaciones.
 
 ---
+[Frontend](https://github.com/aaleccoder/ecommerce-frontend)
+[Backend](https://github.com/aaleccoder/ecommerce-backend)
+
 
 ## 📚 Tabla de Contenidos
 
