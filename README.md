@@ -55,78 +55,6 @@ El sistema es un marketplace **modular** y **escalable** en el que:
 
 ---
 
-## ⚙️ Instalación y Configuración
-
-### Requisitos Previos
-
-- Python 3.8+  
-- Node.js 12+  
-- Git
-
-### Configuración del Entorno de Desarrollo
-
-#### Backend
-
-1. **Clonar el repositorio y crear el entorno virtual:**
-
-   ```bash
-   git clone https://github.com/tu_usuario/marketplace-system.git
-   cd marketplace-system/backend
-   python -m venv env
-   source env/bin/activate  # En Linux/macOS (o env\Scripts\activate en Windows)
-   ```
-
-2. **Instalar dependencias:**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Configuración Inicial:**
-
-   - Edita `settings.py` para incluir:
-     - Apps necesarias: `'rest_framework'`, `'corsheaders'` y tus apps personalizadas.
-     - Configuración de CORS:
-       ```python
-       CORS_ALLOWED_ORIGINS = [
-           "http://localhost:3000",
-       ]
-       ```
-     - Configuración de autenticación JWT:
-       ```python
-       REST_FRAMEWORK = {
-           'DEFAULT_AUTHENTICATION_CLASSES': (
-               'rest_framework_simplejwt.authentication.JWTAuthentication',
-           ),
-       }
-       ```
-
-4. **Migraciones y Ejecución del Servidor:**
-
-   ```bash
-   python manage.py migrate
-   python manage.py runserver
-   ```
-
-#### Frontend
-
-1. **Configurar el entorno de React:**
-
-   ```bash
-   cd ../frontend
-   npm install
-   ```
-
-2. **Iniciar el servidor de desarrollo:**
-
-   ```bash
-   npm start
-   ```
-
-> **Argumento:** Es crucial que la configuración local refleje el entorno de producción. Se recomienda el uso de archivos de configuración (como `.env`) para gestionar variables sensibles y rutas, lo que mejora la seguridad y la escalabilidad del sistema.
-
----
-
 ## 📁 Estructura del Proyecto
 
 Una estructura bien organizada facilita el mantenimiento y la colaboración. Se sugiere la siguiente organización:
@@ -219,25 +147,6 @@ frontend/
 - **Manejo de Errores:** Incluye alertas y mensajes de error para mejorar la experiencia del usuario.
 
 > **Ejemplo:** Un componente `Navbar.js` no solo muestra enlaces de navegación, sino que también se adapta a diferentes resoluciones y muestra el estado de autenticación del usuario (por ejemplo, un botón de “Iniciar sesión” o el avatar del usuario).
-
----
-
-## 🧪 Pruebas y Calidad de Código
-
-### Pruebas Unitarias e Integración
-
-- **Backend:**  
-  - Utiliza `pytest` o el framework de tests de Django para crear pruebas unitarias.
-  - Cubre endpoints, validación de datos y permisos.  
-- **Frontend:**  
-  - Usa herramientas como Jest y React Testing Library para probar componentes y flujos críticos.
-
-> **Argumento:** Incluir pruebas automatizadas desde el inicio mejora la robustez del sistema y previene regresiones. Además, documentar las pruebas en el README ayuda a otros desarrolladores a entender la cobertura del proyecto.
-
-### Estándares de Código
-
-- **Python:** Adhiérete a [PEP 8](https://www.python.org/dev/peps/pep-0008/) para la legibilidad.
-- **JavaScript/React:** Sigue las guías de estilo recomendadas (como las de Airbnb) para mantener consistencia en el código.
 
 ---
 
