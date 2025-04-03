@@ -2,8 +2,7 @@
 
 # Marketplace System 🚀
 
-Bienvenido al repositorio del **Marketplace System**. Este documento detalla el diseño, la arquitectura y las buenas prácticas para el desarrollo de un marketplace robusto en el que usuarios, vendedores y compradores interactúan. Aquí se explica tanto la estructura del código como la estrategia de desarrollo y despliegue, integrando mejoras basadas en fuentes de diseño y prácticas recomendadas en la industria citeturn0search0.
-
+Bienvenido al repositorio del **Marketplace System**. Este documento detalla el diseño, la arquitectura y las buenas prácticas para el desarrollo de un marketplace robusto en el que usuarios, vendedores y compradores interactúan. 
 Este es un overview de como empezar se puede mantener y editar segun consideren necesario. Hagan un push request para cualquier modificacion que consideren y se ponen aqui esto es solo inicialmente. Y este repositorio es solo para estas indicaciones.
 
 ---
@@ -17,10 +16,6 @@ Este es un overview de como empezar se puede mantener y editar segun consideren 
 - [Desarrollo del Backend](#desarrollo-del-backend)
 - [Desarrollo del Frontend](#desarrollo-del-frontend)
 - [Pruebas y Calidad de Código](#pruebas-y-calidad-de-código)
-- [Integración Continua y Despliegue](#integración-continua-y-despliegue)
-- [Mejoras y Futuro del Proyecto](#mejoras-y-futuro-del-proyecto)
-- [Contacto y Contribución](#contacto-y-contribución)
-- [Referencias](#referencias)
 
 ---
 
